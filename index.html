@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>size-quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div id="game">
+            <span id="title">ゲームスタート</span>
+            <p id="result"></p>
+            <p id="number"></p>
+        </div>
+        <div id="selection"></div>
+    </main>
+
+    <!-- スタート画面 -->
+    <div class="start">
+        <h2>大きさ順クイズ</h2>
+        <p>選択肢が四つ出てきます。大きい順にクリックしてください。選択肢を間違えるとゲームオーバーです。5問連続で正解するとクリアです。</p>
+        <h3>クイズのジャンルを選んでください</h3>
+        <div id="prefecturesArea" class="genre">都道府県（面積）</div>
+        <div id="mountain" class="genre">山（標高）</div>
+        <div id="river" class="genre">川（長さ）</div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

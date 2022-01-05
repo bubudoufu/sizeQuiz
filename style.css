@@ -1,0 +1,86 @@
+/* スタート画面 */
+.start {
+  text-align: center;
+  width: 305px;
+  background: white;
+  margin: 8px;
+  position: fixed;
+  inset: 0;
+  margin: auto;
+}
+.genre {
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+}
+.genre:hover {
+  cursor: pointer;
+  background: #f2e6eb;
+  transition: 0.5s;
+}
+
+/* ゲーム画面 */
+body {
+  font-family: system-ui;
+}
+main {
+  width: 300px;
+  margin: 15px auto;
+}
+#game {
+  border: 1px solid black;
+  width: 300px;
+  height: 150px;
+  text-align: center;
+}
+#result {
+  font-size: 24px;
+  font-weight: bold;
+  height: 20px;
+}
+p .size {
+  font-weight: bold;
+  float: right;
+}
+.choice {
+  user-select: none;
+  margin-bottom: 21px;
+}
+.choices {
+  margin-bottom: 20px;
+  border-bottom: 1px solid black;
+  transition: 1s;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.choices:hover {
+  cursor: pointer;
+  background: #f2e6eb;
+  transition: 1s;
+}
+
+/* クリアした時のアニメーション */
+.finish {
+  background: linear-gradient(-45deg, #f9c2eb, #a8c2ee, #c2f9d0, #ffdea5) fixed;
+  background-size: 800% 800%;
+  animation: ending 1s ease infinite;
+}
+
+@keyframes ending {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
